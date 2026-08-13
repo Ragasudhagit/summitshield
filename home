@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Summit Shield Roofing | Dallas, TX</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#727780",
+                        "inverse-primary": "#a0c9ff",
+                        "surface-container": "#e6eeff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-fixed": "#001c37",
+                        "tertiary": "#313437",
+                        "outline-variant": "#c2c7d1",
+                        "surface-dim": "#d0dbed",
+                        "on-primary-fixed-variant": "#07497d",
+                        "surface-tint": "#2d6197",
+                        "on-surface-variant": "#42474f",
+                        "tertiary-fixed-dim": "#c4c7ca",
+                        "tertiary-fixed": "#e0e3e6",
+                        "secondary-fixed": "#ffdad7",
+                        "secondary-fixed-dim": "#ffb3ae",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-secondary-fixed": "#410004",
+                        "on-error-container": "#93000a",
+                        "surface": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#44474a",
+                        "surface-bright": "#f8f9ff",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#a0c9ff",
+                        "inverse-surface": "#27313f",
+                        "on-background": "#121c2a",
+                        "on-primary-container": "#8ebdf9",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fd6d67",
+                        "on-tertiary-container": "#b8bbbd",
+                        "surface-container-high": "#dee9fc",
+                        "background": "#f4f6fb",
+                        "on-primary": "#ffffff",
+                        "primary": "#00355f",
+                        "surface-container-highest": "#d9e3f6",
+                        "on-secondary-container": "#6d000c",
+                        "surface-variant": "#d9e3f6",
+                        "primary-container": "#0f4c81",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-secondary-fixed-variant": "#8b191d",
+                        "on-surface": "#121c2a",
+                        "secondary": "#ac3231",
+                        "tertiary-container": "#474b4d"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "base": "8px",
+                        "gutter": "32px",
+                        "section-gap": "120px",
+                        "container-max": "1400px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "label-bold": ["Inter", "sans-serif"],
+                        "display-lg-mobile": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "headline-sm": ["Inter", "sans-serif"]
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                        'glass-inner': 'inset 0 0 0 1px rgba(255, 255, 255, 0.2)',
+                        'glow': '0 0 40px -10px var(--tw-shadow-color)'
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #f4f6fb;
+            /* Subtle grid background */
+            background-image: 
+                linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            overflow-x: hidden;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+        
+        .dark .glass-panel {
+            background: rgba(18, 28, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            grid-auto-rows: minmax(300px, auto);
+        }
+
+        @media (min-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 280px;
+            }
+            .bento-item-large {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            .bento-item-wide {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+            .bento-item-tall {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, var(--tw-gradient-stops));
+        }
+
+        /* Floating orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .orb-1 { width: 500px; height: 500px; background: #a0c9ff; top: -100px; right: -100px; }
+        .orb-2 { width: 400px; height: 400px; background: #ffdad7; bottom: 20%; left: -50px; }
+        .orb-3 { width: 600px; height: 600px; background: #eaf1ff; top: 40%; right: 10%; opacity: 0.3;}
+    </style>
+</head>
+<body class="text-on-background font-body-md antialiased selection:bg-primary/20 selection:text-primary">
+<!-- Floating Background Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<!-- 1. Top Emergency Bar -->
+<a class="block bg-secondary text-on-secondary text-center py-2.5 font-label-bold text-sm tracking-wider uppercase hover:bg-secondary/90 transition-colors duration-300 relative z-50" href="{{DATA:SCREEN:SCREEN_203}}">
+<span class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+            24/7 Emergency Leak Repair | Call Now: (214) 555-0198
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+</a>
+<!-- 2. Header (TopAppBar) -->
+<header class="sticky top-4 z-40 px-margin-mobile md:px-margin-desktop transition-all duration-500" id="main-header">
+<div class="glass-panel rounded-2xl flex justify-between items-center w-full px-8 py-4 max-w-container-max mx-auto shadow-glass">
+<a class="font-headline-sm text-xl tracking-tight font-extrabold text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">roofing</span>
+                Summit Shield
+            </a>
+<!-- Navigation (Desktop) -->
+<nav class="hidden lg:flex space-x-1">
+<a class="px-4 py-2 rounded-lg text-primary font-semibold bg-primary/5 transition-all duration-300" href="{{DATA:SCREEN:SCREEN_2}}">Home</a>
+<a class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-all duration-300 font-medium" href="{{DATA:SCREEN:SCREEN_174}}">Services</a>
+<a class="px-4 py-2 rounded-lg text-secondary hover:text-secondary hover:bg-secondary/10 transition-all duration-300 font-semibold flex items-center gap-1" href="{{DATA:SCREEN:SCREEN_203}}">
+<span class="material-symbols-outlined text-[16px]">water_drop</span> Emergency
+                </a>
+<a class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-all duration-300 font-medium" href="{{DATA:SCREEN:SCREEN_205}}">Work</a>
+<a class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-all duration-300 font-medium" href="{{DATA:SCREEN:SCREEN_184}}">About</a>
+</nav>
+<div class="hidden lg:flex items-center space-x-4">
+<button class="bg-primary text-on-primary font-label-bold text-sm tracking-wide py-3 px-6 rounded-xl hover:-translate-y-0.5 transition-all duration-300 shadow-[0_4px_14px_0_rgba(0,53,95,0.39)] hover:shadow-[0_6px_20px_rgba(0,53,95,0.23)]">
+                    Get Free Estimate
+                </button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="lg:hidden text-primary p-2 rounded-lg hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- 3. Hero Section (Modernized Fluid Layout) -->
+<section class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-16 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-8 items-center z-10 relative">
+<!-- Text Content -->
+<div class="animate-on-scroll is-visible flex flex-col items-start text-left max-w-2xl">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-primary/20 mb-6 text-sm font-semibold text-primary">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+                    Dallas's Trusted Roofing Experts
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.1] mb-6">
+                    Elevate Your Home's <br/>
+<span class="text-gradient from-primary via-[#0F4C81] to-secondary">Protection.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-10 max-w-xl font-light leading-relaxed">
+                    Premium roof repair, replacement, and storm damage restoration. We blend exceptional craftsmanship with transparent service to protect your most valuable asset.
+                </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-12">
+<button class="w-full sm:w-auto bg-primary text-on-primary font-label-bold text-base py-4 px-8 rounded-xl hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgb(0,53,95,0.3)]">
+                        Get My Free Quote
+                    </button>
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 glass-panel text-primary font-label-bold text-base py-4 px-8 rounded-xl hover:bg-white/80 transition-all duration-300" href="{{DATA:SCREEN:SCREEN_205}}">
+                        View Our Work <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<!-- Trust Badges Glass Bento style -->
+<div class="grid grid-cols-3 gap-4 w-full max-w-lg">
+<div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<span class="text-on-surface font-semibold text-xs uppercase tracking-wider">Licensed</span>
+</div>
+<div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">history</span>
+<span class="text-on-surface font-semibold text-xs uppercase tracking-wider">15+ Yrs</span>
+</div>
+<div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-on-surface font-semibold text-xs uppercase tracking-wider">4.9/5</span>
+</div>
+</div>
+</div>
+<!-- Image Composition -->
+<div class="relative h-[600px] w-full hidden lg:block animate-on-scroll delay-200 is-visible">
+<div class="absolute inset-0 rounded-[2.5rem] overflow-hidden shadow-2xl">
+<img alt="Modern luxury home roof" class="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApktwWOmCrjXIsnp2ENtIdpSG13DPQggSQY3dDxcdChQlUx1hqC1OTq-Xxvce3prl2oGtVHyxhmjWWlgtrdVYUNmRkXmRmAXMpWInU1ZGS4Z7XdjITLhVHowsaAiH5S6-8uVUcXdG0TAG7s60Qq6KRinbsT6zjpTZEpkbxhy0NsrER2n7Duuu23zMAimZIZ-g6J4oS58mlc--5Xz9i2xzkrlUaMqbWK9G1rFMvo_5D76yS5vo4l7XuTw"/>
+<!-- Subtle overlay gradient -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay"></div>
+</div>
+<!-- Floating Glass Element over Image -->
+<div class="absolute -left-12 bottom-12 glass-panel p-6 rounded-2xl shadow-glass flex items-center gap-4 max-w-xs animate-bounce" style="animation-duration: 3s;">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Need help now?</p>
+<p class="text-xs text-on-surface-variant">24/7 Emergency Service</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Services / Process (Bento Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop relative">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 animate-on-scroll">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4">Comprehensive Solutions</h2>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto font-light">From minor repairs to complete overhauls, our streamlined process ensures a stress-free experience.</p>
+</div>
+<div class="bento-grid">
+<!-- Large Item: Intro/CTA -->
+<div class="glass-card rounded-[2rem] p-8 md:p-12 bento-item-large flex flex-col justify-center animate-on-scroll shadow-sm hover:shadow-xl bg-gradient-to-br from-white/80 to-primary-fixed/20 border-white">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">architecture</span>
+<h3 class="text-3xl font-bold text-on-surface mb-4">Our Streamlined Process</h3>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">We've refined our approach to minimize disruption to your daily life while delivering unparalleled craftsmanship.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all w-fit" href="{{DATA:SCREEN:SCREEN_174}}">
+                        Explore All Services <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Step 1 -->
+<div class="glass-card rounded-[2rem] p-8 animate-on-scroll delay-100 flex flex-col justify-between group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-2">1. Request Quote</h4>
+<p class="text-on-surface-variant text-sm">Reach out via phone or our online form to schedule.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="glass-card rounded-[2rem] p-8 animate-on-scroll delay-200 flex flex-col justify-between group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined">search</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-2">2. Inspection</h4>
+<p class="text-on-surface-variant text-sm">Thorough, no-obligation on-site assessment.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="glass-card rounded-[2rem] p-8 animate-on-scroll delay-300 flex flex-col justify-between group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-2">3. Clear Estimate</h4>
+<p class="text-on-surface-variant text-sm">Detailed breakdown of options and pricing.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="glass-card rounded-[2rem] p-8 animate-on-scroll delay-400 flex flex-col justify-between group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-2">4. Execution</h4>
+<p class="text-on-surface-variant text-sm">Professional work, leaving your property spotless.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Projects Gallery (Bento Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 animate-on-scroll">
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4">Featured Projects</h2>
+<p class="text-lg text-on-surface-variant max-w-xl font-light">Explore our recent craftsmanship across the Dallas metroplex.</p>
+</div>
+<a class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full text-primary font-bold shadow-sm hover:shadow-md transition-all border border-outline-variant/20 hover:-translate-y-1" href="{{DATA:SCREEN:SCREEN_205}}">
+                    View Gallery <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="bento-grid">
+<!-- Project 1 (Wide) -->
+<a class="bento-item-wide group relative rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 animate-on-scroll block" href="{{DATA:SCREEN:SCREEN_205}}">
+<img alt="Roof replacement" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAobni3HkyRhjmIyaVbRPQ8zw5Zn1ZEUiq2SJnxIS0aCmRbHmEkNGNskJny1pYDFuXoILhi7uUQ-gKDKF7etpgUJUZUNvzkhDWrx-sF_t-iPxqifYayBb6kDVBmKAqrXbICmGhRf7ZYbbzAeflF74MR8NObyKjLlsXEGf-GKyhNWrs73gNARn1j6yJQghHH9lLRzu7YFW66OXCqb5xwA_dAYmRzkrFTK2hmZnVa20dnBK6CMfeIKrNOKA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold mb-3 border border-white/30">Full Replacement</span>
+<h3 class="text-2xl font-bold text-white mb-1">Modern Architectural</h3>
+<p class="text-white/80 text-sm">Plano, TX</p>
+</div>
+</div>
+</a>
+<!-- Project 2 (Tall) -->
+<a class="bento-item-tall group relative rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 animate-on-scroll delay-100 block" href="{{DATA:SCREEN:SCREEN_205}}">
+<img alt="Storm damage repair" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqfPIJ9swBeFmKKhjQ3use00DVGffyegGPfr_87jAGkJQ0bqbunhtd9ykH41n9Y50pWUd_J57rM_9pDbcBJoBwybihY88bCR8hsmY6amdW5DuCUDvpYjlubSjRdKyzpky-RV6e2MBg-NX0EU93C-lAfPVADmoYYkCMDIqMeWVGAG_pzpD9OK5WCNqFE-3bBXsD5MSvH34cTVZ1k4HgRW9KVOtVcz3dOAk3HopV48je2_yno8lM9zoNpA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary/80 backdrop-blur-md text-white text-xs font-bold mb-3 border border-white/30">Storm Repair</span>
+<h3 class="text-xl font-bold text-white mb-1">Hail Restoration</h3>
+<p class="text-white/80 text-sm">Richardson, TX</p>
+</div>
+</div>
+</a>
+<!-- Project 3 (Standard) -->
+<a class="group relative rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 animate-on-scroll delay-200 block" href="{{DATA:SCREEN:SCREEN_205}}">
+<img alt="Architectural shingles" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDX-pv5YfQCv_gl27yahvKuTo3-LJIGXwTIw0woRvhT9pe7BdyWnmgsKrT2gWpSG5H7PbIJL8a5yC5vrh2jSCM7ITPiY0mDezjvfTWCk9H9qNKJGLs-dfSbi5WiMZ1RM5AAmERsZXdpJeXQ6dJYuCtFFuG2cqDC5TY5YgpwRdYCipmE9f1asb1AzYSg7M88wpGBfLFaryqHYatQUQZg4aHAUUejdd1PAgGeg9lGBwd7RE9YgndIfW6Bg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<h3 class="text-lg font-bold text-white mb-1">Premium Shingles</h3>
+<p class="text-white/80 text-sm">Dallas, TX</p>
+</div>
+</div>
+</a>
+<!-- Project 4 (Standard) -->
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-center items-center text-center animate-on-scroll delay-300 group cursor-pointer hover:bg-primary hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white mb-4 transition-colors">grid_view</span>
+<h3 class="text-xl font-bold mb-2">View 50+ Projects</h3>
+<p class="text-sm opacity-80 mb-4">Browse our extensive portfolio.</p>
+<span class="w-10 h-10 rounded-full border border-current flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -z-10 -translate-y-1/2"></div>
+<div class="absolute top-0 right-1/4 w-[400px] h-[400px] bg-secondary-fixed-dim/20 rounded-full blur-[100px] -z-10"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-16 animate-on-scroll">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4">What Our Clients Say</h2>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto font-light">Don't just take our word for it. Hear from homeowners across the Dallas metroplex.</p>
+</div>
+<div class="bento-grid">
+<!-- Testimonial 1 (Large) -->
+<div class="glass-card rounded-[2rem] p-8 md:p-12 bento-item-large flex flex-col justify-between animate-on-scroll shadow-sm hover:shadow-xl">
+<div class="flex gap-1 text-secondary-container mb-6">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl md:text-2xl text-on-surface italic leading-relaxed mb-8 font-light">"Summit Shield completely transformed our experience with roofing contractors. After a major hail storm, they handled everything from the initial inspection to dealing directly with our insurance. The new architectural shingles look fantastic, and the crew left our property spotless."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">MR</div>
+<div>
+<h4 class="font-bold text-on-surface">Michael Roberts</h4>
+<p class="text-sm text-on-surface-variant">Full Roof Replacement</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-between animate-on-scroll delay-100">
+<div class="flex gap-1 text-secondary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-6">"Fast, professional, and transparent. We had an emergency leak and they were here within the hour. Highly recommend their services."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SJ</div>
+<div>
+<h4 class="font-bold text-on-surface text-sm">Sarah Jenkins</h4>
+<p class="text-xs text-on-surface-variant">Emergency Repair</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-between animate-on-scroll delay-200">
+<div class="flex gap-1 text-secondary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-6">"The commercial division is top-notch. They re-roofed our entire retail center with minimal disruption to our tenants."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">DT</div>
+<div>
+<h4 class="font-bold text-on-surface text-sm">David Thompson</h4>
+<p class="text-xs text-on-surface-variant">Commercial Roofing</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Area with Glass effect -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 bg-primary z-0"></div>
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-0 mix-blend-overlay"></div>
+<div class="max-w-4xl mx-auto relative z-10 glass-panel !bg-white/10 !border-white/20 rounded-[3rem] p-12 text-center animate-on-scroll">
+<h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to secure your home?</h2>
+<p class="text-primary-fixed text-lg mb-10 max-w-2xl mx-auto">Get a free, transparent estimate today. No high-pressure sales, just honest assessments and premium quality work.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary text-white font-bold py-4 px-10 rounded-xl hover:scale-105 transition-transform duration-300 shadow-xl">
+                    Get Free Quote
+                </button>
+<a class="bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold py-4 px-10 rounded-xl hover:bg-white/20 transition-colors duration-300 flex items-center justify-center gap-2" href="tel:2145550198">
+<span class="material-symbols-outlined">call</span> (214) 555-0198
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer remains largely same structure, minor style tweaks for cohesion -->
+<footer class="bg-tertiary full-width pt-20 pb-10 border-t border-white/10 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-16">
+<!-- Brand Column -->
+<div class="flex flex-col space-y-4">
+<span class="text-2xl font-extrabold text-white flex items-center gap-2 tracking-tight">
+<span class="material-symbols-outlined text-primary-fixed">roofing</span>
+                    Summit Shield
+                </span>
+<p class="text-white/70 text-sm leading-relaxed">
+                    Professional protection and local trust for Dallas homeowners. Premium materials, expert installation.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-bold text-white tracking-wider text-sm uppercase">Services</h4>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="{{DATA:SCREEN:SCREEN_220}}">Residential</a>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="{{DATA:SCREEN:SCREEN_200}}">Commercial</a>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="{{DATA:SCREEN:SCREEN_174}}">Roof Repair</a>
+<a class="text-secondary-fixed hover:text-secondary-fixed-dim hover:translate-x-1 transition-all text-sm font-semibold flex items-center gap-1" href="{{DATA:SCREEN:SCREEN_179}}">
+                    Storm Damage <span class="material-symbols-outlined text-[14px]">bolt</span>
+</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-bold text-white tracking-wider text-sm uppercase">Company</h4>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="{{DATA:SCREEN:SCREEN_184}}">Our Story</a>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="{{DATA:SCREEN:SCREEN_205}}">Recent Work</a>
+<a class="text-white/70 hover:text-white hover:translate-x-1 transition-all text-sm" href="#">Privacy Policy</a>
+</div>
+<!-- Contact Column -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-bold text-white tracking-wider text-sm uppercase">Contact Us</h4>
+<a class="text-white/70 hover:text-white transition-colors text-sm flex items-center gap-2" href="tel:2145550198">
+<span class="material-symbols-outlined text-[18px]">call</span> (214) 555-0198
+                </a>
+<a class="text-white/70 hover:text-white transition-colors text-sm flex items-center gap-2" href="mailto:info@summitshield.com">
+<span class="material-symbols-outlined text-[18px]">mail</span> info@summitshield.com
+                </a>
+<p class="text-white/50 text-sm mt-4">
+                    Serving Dallas, TX and surrounding metroplex areas.
+                </p>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 text-center px-margin-mobile">
+<span class="text-white/40 text-xs">
+                © 2024 Summit Shield Roofing. All rights reserved. Licensed, Bonded, and Insured.
+            </span>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Glass Header effect on scroll
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('main-header');
+                const headerInner = header.firstElementChild;
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2');
+                    headerInner.classList.add('bg-white/80', 'backdrop-blur-xl', 'shadow-lg');
+                    headerInner.classList.remove('bg-white/60');
+                } else {
+                    header.classList.remove('py-2');
+                    headerInner.classList.remove('bg-white/80', 'backdrop-blur-xl', 'shadow-lg');
+                    headerInner.classList.add('bg-white/60');
+                }
+                
+                // Parallax for orbs
+                document.querySelectorAll('.orb').forEach((orb, index) => {
+                    const speed = (index + 1) * 0.1;
+                    orb.style.transform = `translateY(${window.scrollY * speed}px)`;
+                });
+            });
+        });
+    </script>
+</body></html>
